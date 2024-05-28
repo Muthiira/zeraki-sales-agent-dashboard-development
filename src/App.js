@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js (Updated)
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Schools from './components/School';
+import Home from './components/Home';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/schools" element={<Schools />} />
+            <Route path="/home" element={<Home />} /> {/* Route to the ZerakiPage component */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

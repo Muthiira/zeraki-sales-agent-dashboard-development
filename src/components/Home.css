@@ -1,0 +1,25 @@
+/* Home.css */
+
+.home-page {
+	padding: 20px;
+  }
+  
+  .home-page h1 {
+	font-size: 32px;
+	color: #333;
+	margin-bottom: 20px;
+  }
+  
+  .home-page p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+  }
+
+  .home-container {
+	margin-left: 200px; /* Adjust margin to match sidebar width */
+	padding: 20px;
+  }
+  
+  /* Add more styles as needed */
+  

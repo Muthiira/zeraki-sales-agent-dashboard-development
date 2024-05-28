@@ -1,0 +1,38 @@
+/* Sidebar.css */
+
+.sidebar {
+	width: 200px;
+	background: #f8f9fa;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	right: -200px; /* Start from right and hide initially */
+	height: 100%;
+	transition: right 0.3s ease-in-out;
+	z-index: 1000; /* Ensure sidebar appears above other content */
+  }
+  
+  .open {
+	right: 0; /* Show sidebar on the right when hovered */
+  }
+  
+  ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  ul li {
+	margin-bottom: 10px;
+  }
+  
+  ul li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #333;
+  }
+  
+  ul li a:hover {
+	background: #ddd;
+  }
+  

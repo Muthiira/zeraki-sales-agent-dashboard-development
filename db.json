@@ -1,0 +1,29 @@
+{
+	"schools": [
+	  { "id": 1, "name": "School A", "type": "Primary", "county": "County A", "registrationDate": "2022-01-01", "contact": "123456789", "balance": 1000 },
+	  { "id": 2, "name": "School B", "type": "Secondary", "county": "County B", "registrationDate": "2023-02-01", "contact": "987654321", "balance": 2000 }
+	],
+	"invoices": [
+	  { "id": 1, "schoolId": 1, "amount": 500, "dueDate": "2024-06-01", "status": "Pending" },
+	  { "id": 2, "schoolId": 2, "amount": 1500, "dueDate": "2024-06-10", "status": "Completed" }
+	],
+	"collections": [
+	  { "id": 1, "invoiceId": 1, "amount": 500, "date": "2024-05-01", "status": "Valid" }
+	],
+	"metrics": {
+		"collections": 120,
+		"signUps": 80,
+		"totalRevenue": 50000,
+		"bouncedCheques": 5
+	  },
+	  "signupTargets": {
+		"analytics": { "target": 100, "achieved": 70 },
+		"finance": { "target": 100, "achieved": 50 },
+		"timetable": { "target": 100, "achieved": 60 }
+	  },
+	  "signupDistribution": {
+		"analytics": { "primary": 30, "secondary": 25, "igcse": 15 },
+		"finance": { "primary": 20, "secondary": 15, "igcse": 15 },
+		"timetable": { "primary": 25, "secondary": 20, "igcse": 15 }
+	  }
+}
