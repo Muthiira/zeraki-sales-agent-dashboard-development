@@ -3,8 +3,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import Schools from './components/School';
+import Schools from './components/Schools';
 import Sidebar from './components/Sidebar';
+import SchoolDetails from './components/SchoolDetails';
 import Home from './components/Home'; // Import the Home component
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
         <Sidebar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} /> {/* Update to use Home component */}
+            <Route path="/" element={<Home />} /> Update to use Home component
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/schools" element={<Schools />} />
+            <Route path="/schools/:id" element={<SchoolDetails />} />
           </Routes>
         </div>
       </div>

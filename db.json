@@ -1,90 +1,280 @@
 {
 	"schools": [
 		{
-		  "id": 1,
-		  "name": "Green Valley Primary School",
-		  "type": "Primary",
-		  "product": "Zeraki Analytics",
-		  "county": "Nairobi",
-		  "registrationDate": "2020-01-15",
-		  "contact": "0723456789",
-		  "balance": 15000,
-		  "invoices": [
-			{
-			  "id": 101,
-			  "invoiceNumber": "INV-1001",
-			  "item": "Zeraki Analytics",
-			  "creationDate": "2023-04-01",
-			  "dueDate": "2023-04-30",
-			  "amount": 10000,
-			  "paidAmount": 5000,
-			  "balance": 5000,
-			  "status": "Pending",
-			  "daysUntilDue": 2
-			},
-			{
-			  "id": 102,
-			  "invoiceNumber": "INV-1002",
-			  "item": "Zeraki Finance",
-			  "creationDate": "2023-03-01",
-			  "dueDate": "2023-03-31",
-			  "amount": 20000,
-			  "paidAmount": 15000,
-			  "balance": 5000,
-			  "status": "Completed",
-			  "daysUntilDue": -60
-			}
-		  ],
-		  "collections": [
-			{
-			  "id": 201,
-			  "invoiceNumber": "INV-1001",
-			  "collectionNumber": "COL-3001",
-			  "dateOfCollection": "2023-04-15",
-			  "status": "Valid",
-			  "amount": 5000
-			},
-			{
-			  "id": 202,
-			  "invoiceNumber": "INV-1002",
-			  "collectionNumber": "COL-3002",
-			  "dateOfCollection": "2023-03-20",
-			  "status": "Valid",
-			  "amount": 15000
-			}
-		  ]
-		},
+      "id": 1,
+      "name": "Greenwood High",
+      "type": "Secondary",
+      "product": "Zeraki Analytics",
+      "county": "Nairobi",
+      "registrationDate": "2020-01-10",
+      "contact": "contact@greenwoodhigh.com",
+      "balance": 5000,
+      "invoices": [
+        {
+          "id": 1,
+          "invoiceNumber": "INV202101",
+          "item": "Zeraki Analytics",
+          "creationDate": "2023-05-01",
+          "dueDate": "2023-06-01",
+          "amount": 2000,
+          "paidAmount": 1000,
+          "balance": 1000,
+          "status": "Pending",
+          "daysUntilDue": 10
+        },
+        {
+          "id": 2,
+          "invoiceNumber": "INV202102",
+          "item": "Zeraki Finance",
+          "creationDate": "2023-05-05",
+          "dueDate": "2023-06-05",
+          "amount": 1500,
+          "paidAmount": 500,
+          "balance": 1000,
+          "status": "Pending",
+          "daysUntilDue": 14
+        }
+      ],
+      "collections": [
+        {
+          "id": 1,
+          "invoiceNumber": "INV202101",
+          "collectionNumber": "COL202101",
+          "dateOfCollection": "2023-05-10",
+          "status": "Valid",
+          "amount": 1000
+        },
+        {
+          "id": 2,
+          "invoiceNumber": "INV202102",
+          "collectionNumber": "COL202102",
+          "dateOfCollection": "2023-05-15",
+          "status": "Valid",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sunrise Academy",
+      "type": "Primary",
+      "product": "Zeraki Timetable",
+      "county": "Mombasa",
+      "registrationDate": "2019-03-15",
+      "contact": "info@sunriseacademy.com",
+      "balance": 3000,
+      "invoices": [
+        {
+          "id": 3,
+          "invoiceNumber": "INV202103",
+          "item": "Zeraki Timetable",
+          "creationDate": "2023-04-01",
+          "dueDate": "2023-05-01",
+          "amount": 3000,
+          "paidAmount": 0,
+          "balance": 3000,
+          "status": "Pending",
+          "daysUntilDue": 5
+        }
+      ],
+      "collections": [
+        {
+          "id": 3,
+          "invoiceNumber": "INV202103",
+          "collectionNumber": "COL202103",
+          "dateOfCollection": "2023-04-15",
+          "status": "Bounced",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Riverside School",
+      "type": "IGCSE",
+      "product": "Zeraki Analytics",
+      "county": "Kisumu",
+      "registrationDate": "2018-06-20",
+      "contact": "contact@riversideschool.com",
+      "balance": 4000,
+      "invoices": [
+        {
+          "id": 4,
+          "invoiceNumber": "INV202104",
+          "item": "Zeraki Analytics",
+          "creationDate": "2023-03-01",
+          "dueDate": "2023-04-01",
+          "amount": 2000,
+          "paidAmount": 2000,
+          "balance": 0,
+          "status": "Completed",
+          "daysUntilDue": 0
+        },
+        {
+          "id": 5,
+          "invoiceNumber": "INV202105",
+          "item": "Zeraki Finance",
+          "creationDate": "2023-04-05",
+          "dueDate": "2023-05-05",
+          "amount": 1500,
+          "paidAmount": 0,
+          "balance": 1500,
+          "status": "Pending",
+          "daysUntilDue": 10
+        }
+      ],
+      "collections": [
+        {
+          "id": 4,
+          "invoiceNumber": "INV202104",
+          "collectionNumber": "COL202104",
+          "dateOfCollection": "2023-03-10",
+          "status": "Valid",
+          "amount": 2000
+        },
+        {
+          "id": 5,
+          "invoiceNumber": "INV202105",
+          "collectionNumber": "COL202105",
+          "dateOfCollection": "2023-04-20",
+          "status": "Valid",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hilltop School",
+      "type": "IGCSE",
+      "product": "Zeraki Timetable",
+      "county": "Nakuru",
+      "registrationDate": "2021-09-15",
+      "contact": "info@hilltopschool.com",
+      "balance": 2500,
+      "invoices": [
+        {
+          "id": 6,
+          "invoiceNumber": "INV202106",
+          "item": "Zeraki Timetable",
+          "creationDate": "2023-01-15",
+          "dueDate": "2023-02-15",
+          "amount": 2500,
+          "paidAmount": 0,
+          "balance": 2500,
+          "status": "Pending",
+          "daysUntilDue": 30
+        }
+      ],
+      "collections": [
+        {
+          "id": 6,
+          "invoiceNumber": "INV202106",
+          "collectionNumber": "COL202106",
+          "dateOfCollection": "2023-02-01",
+          "status": "Valid",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sunset Primary",
+      "type": "Primary",
+      "product": "Zeraki Analytics",
+      "county": "Kiambu",
+      "registrationDate": "2017-11-10",
+      "contact": "contact@sunsetprimary.com",
+      "balance": 1000,
+      "invoices": [
+        {
+          "id": 7,
+          "invoiceNumber": "INV202107",
+          "item": "Zeraki Analytics",
+          "creationDate": "2023-02-01",
+          "dueDate": "2023-03-01",
+          "amount": 1000,
+          "paidAmount": 1000,
+          "balance": 0,
+          "status": "Completed",
+          "daysUntilDue": 0
+        }
+      ],
+      "collections": [
+        {
+          "id": 7,
+          "invoiceNumber": "INV202107",
+          "collectionNumber": "COL202107",
+          "dateOfCollection": "2023-02-15",
+          "status": "Valid",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Starlight School",
+      "type": "Secondary",
+      "product": "Zeraki Finance",
+      "county": "Machakos",
+      "registrationDate": "2019-12-25",
+      "contact": "info@starlightacademy.com",
+      "balance": 2000,
+      "invoices": [
+        {
+          "id": 8,
+          "invoiceNumber": "INV202108",
+          "item": "Zeraki Finance",
+          "creationDate": "2023-03-05",
+          "dueDate": "2023-04-05",
+          "amount": 2000,
+          "paidAmount": 0,
+          "balance": 2000,
+          "status": "Pending",
+          "daysUntilDue": 5
+        }
+      ],
+      "collections": [
+        {
+          "id": 8,
+          "invoiceNumber": "INV202108",
+          "collectionNumber": "COL202108",
+          "dateOfCollection": "2023-03-20",
+          "status": "Valid",
+          "amount": 1000
+        }
+      ]
+    },
 		{
 		  "id": 2,
-		  "name": "Blue Hills Secondary School",
+		  "name": "Sunrise Academy",
 		  "type": "Secondary",
-		  "product": "Zeraki Finance",
-		  "county": "Kiambu",
-		  "registrationDate": "2019-09-10",
-		  "contact": "0723456790",
-		  "balance": 8000,
+		  "product": "Zeraki Timetable",
+		  "county": "Mombasa",
+		  "registrationDate": "2019-03-15",
+		  "contact": "info@sunriseacademy.com",
+		  "balance": 3000,
 		  "invoices": [
 			{
-			  "id": 103,
-			  "invoiceNumber": "INV-1003",
-			  "item": "Zeraki Finance",
-			  "creationDate": "2023-02-01",
-			  "dueDate": "2023-02-28",
-			  "amount": 15000,
-			  "paidAmount": 7000,
-			  "balance": 8000,
+			  "id": 3,
+			  "invoiceNumber": "INV202103",
+			  "item": "Zeraki Timetable",
+			  "creationDate": "2023-04-01",
+			  "dueDate": "2023-05-01",
+			  "amount": 3000,
+			  "paidAmount": 0,
+			  "balance": 3000,
 			  "status": "Pending",
-			  "daysUntilDue": -90
+			  "daysUntilDue": 5
 			}
 		  ],
 		  "collections": [
 			{
-			  "id": 203,
-			  "invoiceNumber": "INV-1003",
-			  "collectionNumber": "COL-3003",
-			  "dateOfCollection": "2023-02-15",
+			  "id": 3,
+			  "invoiceNumber": "INV202103",
+			  "collectionNumber": "COL202103",
+			  "dateOfCollection": "2023-04-15",
 			  "status": "Bounced",
-			  "amount": 7000
+			  "amount": 0
 			}
 		  ]
 		}
