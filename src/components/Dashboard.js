@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import axios from 'axios';
 import { Pie, Bar } from 'react-chartjs-2';
-import { Card, CardContent, Typography, Grid, Button } from '@material-ui/core';
+import { Card, CardContent, Typography, Grid, Button, Modal, TextField, Box } from '@material-ui/core';
 import 'chart.js/auto';
 
 const Dashboard = () => {
@@ -20,6 +20,7 @@ const Dashboard = () => {
     timetable: { primary: 0, secondary: 0, igcse: 0 },
   });
   const [upcomingInvoices, setUpcomingInvoices] = useState([]);
+  const [selectedInvoice, setSelectedInvoice] = useState(null);
 
   useEffect(() => {
     axios.get('http://localhost:3001/metrics').then(response => {
@@ -69,9 +70,12 @@ const Dashboard = () => {
     },
   }), []);
 
-  const handlePayment = (invoiceId) => {
-    console.log(`Collecting payment for invoice: ${invoiceId}`);
-    // Implement payment collection logic here
+  const handlePayment = (invoice) => {
+    setSelectedInvoice(invoice);
+  };
+
+  const closeModal = () => {
+    setSelectedInvoice(null);
   };
 
   return (
@@ -122,7 +126,7 @@ const Dashboard = () => {
                     <Typography variant="body1">{invoice.schoolName}</Typography>
                     <Typography variant="body2">Amount Due: {invoice.amountDue}</Typography>
                     <Typography variant="body2">Due Date: {invoice.dueDate}</Typography>
-                    <Button variant="contained" color="primary" onClick={() => handlePayment(invoice.id)}>
+                    <Button variant="contained" color="primary" onClick={() => handlePayment(invoice)}>
                       Collect Payment
                     </Button>
                   </Grid>
@@ -132,6 +136,13 @@ const Dashboard = () => {
           </Card>
         </Grid>
       </Grid>
+
+      {selectedInvoice && (
+        <PaymentModal
+          invoice={selectedInvoice}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 };
@@ -149,5 +160,58 @@ const MetricCard = ({ title, value, details }) => (
     </Card>
   </Grid>
 );
+
+const PaymentModal = ({ invoice, onClose }) => {
+  const [amount, setAmount] = useState('');
+  const [status, setStatus] = useState('Valid');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+
+  const handleSubmit = () => {
+    // Implement payment collection logic here
+    console.log(`Collected payment for invoice: ${invoice.id}`);
+    console.log(`Amount: ${amount}, Status: ${status}, Date: ${date}`);
+    onClose();
+  };
+
+  return (
+    <Modal open={true} onClose={onClose}>
+      <Box style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, backgroundColor: 'white', padding: 20 }}>
+        <Typography variant="h6">Collect Payment for {invoice.schoolName}</Typography>
+        <TextField
+          fullWidth
+          label="Amount"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+          margin="normal"
+        />
+        <TextField
+          fullWidth
+          select
+          label="Status"
+          value={status}
+          onChange={(e) => setStatus(e.target.value)}
+          margin="normal"
+          SelectProps={{
+            native: true,
+          }}
+        >
+          <option value="Valid">Valid</option>
+          <option value="Bounced">Bounced</option>
+        </TextField>
+        <TextField
+          fullWidth
+          label="Date"
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          margin="normal"
+        />
+        <Button variant="contained" color="primary" onClick={handleSubmit}>
+          Submit
+        </Button>
+      </Box>
+    </Modal>
+  );
+};
 
 export default Dashboard;
