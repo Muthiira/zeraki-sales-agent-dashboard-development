@@ -2,37 +2,49 @@
 
 .sidebar {
 	width: 200px;
-	background: #f8f9fa;
-	padding: 10px;
+	height: 100vh;
+	background-color: #f0f0f0;
 	position: fixed;
+	left: 0;
 	top: 0;
-	right: -200px; /* Start from right and hide initially */
-	height: 100%;
-	transition: right 0.3s ease-in-out;
-	z-index: 1000; /* Ensure sidebar appears above other content */
+	transition: transform 0.3s ease;
+	z-index: 100;
   }
   
-  .open {
-	right: 0; /* Show sidebar on the right when hovered */
+  .sidebar.open {
+	transform: translateX(0);
   }
   
-  ul {
+  .sidebar nav {
+	margin-top: 50px;
+  }
+  
+  .sidebar ul {
 	list-style-type: none;
 	padding: 0;
   }
   
-  ul li {
-	margin-bottom: 10px;
+  .sidebar ul li {
+	padding: 10px 0;
   }
   
-  ul li a {
+  .sidebar ul li a {
 	display: block;
-	padding: 5px;
-	text-decoration: none;
+	padding: 10px;
 	color: #333;
+	text-decoration: none;
   }
   
-  ul li a:hover {
-	background: #ddd;
+  .sidebar ul li a:hover {
+	background-color: #ddd;
+  }
+  
+  .content {
+	margin-left: 200px; /* Width of the sidebar */
+	padding: 20px;
+  }
+  
+  .home-container {
+	padding: 20px;
   }
   

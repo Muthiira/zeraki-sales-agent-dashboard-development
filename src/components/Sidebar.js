@@ -1,11 +1,12 @@
 // Sidebar.js
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './Sidebar.css';
 
 const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -15,22 +16,27 @@ const Sidebar = () => {
     setIsHovered(false);
   };
 
+  const handleBackHome = () => {
+    navigate('/'); // Navigate to the home page
+  };
+
   return (
     <div
       className={`sidebar ${isHovered ? 'open' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h2>Navigation</h2>
       <nav>
         <ul>
           <li>
-            <Link to="/">Dashboard</Link>
+            <Link to="/">Home</Link> {/* Link to Home */}
           </li>
           <li>
-            <Link to="/schools">Schools</Link>
+            <Link to="/dashboard">Dashboard</Link> {/* Link to Dashboard */}
           </li>
-          {/* Add more navigation items as needed */}
+          <li>
+            <Link to="/schools">Schools</Link> {/* Link to Schools */}
+          </li>
         </ul>
       </nav>
     </div>

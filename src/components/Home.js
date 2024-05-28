@@ -1,7 +1,6 @@
 // Home.js
 
 import React from 'react';
-import './Home.css'; // Import the Home.css file for styling
 
 const Home = () => {
   return (

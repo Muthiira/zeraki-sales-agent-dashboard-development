@@ -1,11 +1,11 @@
-// App.js (Updated)
+// App.js
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Schools from './components/School';
-import Home from './components/Home';
 import Sidebar from './components/Sidebar';
+import Home from './components/Home'; // Import the Home component
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Sidebar />
         <div className="content">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Home />} /> {/* Update to use Home component */}
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/schools" element={<Schools />} />
-            <Route path="/home" element={<Home />} /> {/* Route to the ZerakiPage component */}
           </Routes>
         </div>
       </div>
