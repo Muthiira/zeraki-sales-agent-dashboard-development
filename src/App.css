@@ -95,7 +95,6 @@ ul li a:hover {
   background: #ddd;
 }
 
-
 .school-list div:hover {
   background: #ddd;
 }
@@ -118,4 +117,9 @@ ul li a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
 }

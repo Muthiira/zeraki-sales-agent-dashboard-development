@@ -1,8 +1,94 @@
 {
 	"schools": [
-	  { "id": 1, "name": "School A", "type": "Primary", "county": "County A", "registrationDate": "2022-01-01", "contact": "123456789", "balance": 1000 },
-	  { "id": 2, "name": "School B", "type": "Secondary", "county": "County B", "registrationDate": "2023-02-01", "contact": "987654321", "balance": 2000 }
-	],
+		{
+		  "id": 1,
+		  "name": "Green Valley Primary School",
+		  "type": "Primary",
+		  "product": "Zeraki Analytics",
+		  "county": "Nairobi",
+		  "registrationDate": "2020-01-15",
+		  "contact": "0723456789",
+		  "balance": 15000,
+		  "invoices": [
+			{
+			  "id": 101,
+			  "invoiceNumber": "INV-1001",
+			  "item": "Zeraki Analytics",
+			  "creationDate": "2023-04-01",
+			  "dueDate": "2023-04-30",
+			  "amount": 10000,
+			  "paidAmount": 5000,
+			  "balance": 5000,
+			  "status": "Pending",
+			  "daysUntilDue": 2
+			},
+			{
+			  "id": 102,
+			  "invoiceNumber": "INV-1002",
+			  "item": "Zeraki Finance",
+			  "creationDate": "2023-03-01",
+			  "dueDate": "2023-03-31",
+			  "amount": 20000,
+			  "paidAmount": 15000,
+			  "balance": 5000,
+			  "status": "Completed",
+			  "daysUntilDue": -60
+			}
+		  ],
+		  "collections": [
+			{
+			  "id": 201,
+			  "invoiceNumber": "INV-1001",
+			  "collectionNumber": "COL-3001",
+			  "dateOfCollection": "2023-04-15",
+			  "status": "Valid",
+			  "amount": 5000
+			},
+			{
+			  "id": 202,
+			  "invoiceNumber": "INV-1002",
+			  "collectionNumber": "COL-3002",
+			  "dateOfCollection": "2023-03-20",
+			  "status": "Valid",
+			  "amount": 15000
+			}
+		  ]
+		},
+		{
+		  "id": 2,
+		  "name": "Blue Hills Secondary School",
+		  "type": "Secondary",
+		  "product": "Zeraki Finance",
+		  "county": "Kiambu",
+		  "registrationDate": "2019-09-10",
+		  "contact": "0723456790",
+		  "balance": 8000,
+		  "invoices": [
+			{
+			  "id": 103,
+			  "invoiceNumber": "INV-1003",
+			  "item": "Zeraki Finance",
+			  "creationDate": "2023-02-01",
+			  "dueDate": "2023-02-28",
+			  "amount": 15000,
+			  "paidAmount": 7000,
+			  "balance": 8000,
+			  "status": "Pending",
+			  "daysUntilDue": -90
+			}
+		  ],
+		  "collections": [
+			{
+			  "id": 203,
+			  "invoiceNumber": "INV-1003",
+			  "collectionNumber": "COL-3003",
+			  "dateOfCollection": "2023-02-15",
+			  "status": "Bounced",
+			  "amount": 7000
+			}
+		  ]
+		}
+	  ],
 	"invoices": [
 	  { "id": 1, "schoolId": 1, "amount": 500, "dueDate": "2024-06-01", "status": "Pending" },
 	  { "id": 2, "schoolId": 2, "amount": 1500, "dueDate": "2024-06-10", "status": "Completed" }
@@ -13,7 +99,12 @@
 	"metrics": {
 		"collections": 120,
 		"signUps": 80,
-		"totalRevenue": 50000,
+		"totalRevenue": {
+			"overall": 50000,
+			"analytics": 20000,
+			"finance": 15000,
+			"timetable": 15000
+		  },
 		"bouncedCheques": 5
 	  },
 	  "signupTargets": {
@@ -25,5 +116,26 @@
 		"analytics": { "primary": 30, "secondary": 25, "igcse": 15 },
 		"finance": { "primary": 20, "secondary": 15, "igcse": 15 },
 		"timetable": { "primary": 25, "secondary": 20, "igcse": 15 }
-	  }
+	  },
+	  "upcomingInvoices": [
+		{
+		  "id": 1,
+		  "schoolName": "Greenfield Primary School",
+		  "amountDue": 500,
+		  "dueDate": "2024-06-15"
+		},
+		{
+		  "id": 2,
+		  "schoolName": "Riverside Secondary School",
+		  "amountDue": 750,
+		  "dueDate": "2024-06-20"
+		},
+		{
+		  "id": 3,
+		  "schoolName": "Lakeside IGCSE Academy",
+		  "amountDue": 1000,
+		  "dueDate": "2024-06-25"
+		}
+	  ]
+
 }

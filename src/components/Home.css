@@ -1,25 +1,24 @@
 /* Home.css */
 
-.home-page {
+.home-container {
+	margin-left: 200px; /* Adjust margin to match the end of the sidebar */
 	padding: 20px;
+	background-color: #fff; /* Set background color to white */
+	color: #333; /* Set text color to dark */
+	height: 100vh; /* Set height to full viewport height */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
   }
   
-  .home-page h1 {
-	font-size: 32px;
-	color: #333;
+  .home-container h1 {
+	font-size: 48px;
 	margin-bottom: 20px;
   }
   
-  .home-page p {
-	font-size: 18px;
+  .home-container p {
+	font-size: 24px;
 	line-height: 1.5;
-	color: #666;
   }
-
-  .home-container {
-	margin-left: 200px; /* Adjust margin to match sidebar width */
-	padding: 20px;
-  }
-  
-  /* Add more styles as needed */
   

@@ -1,12 +1,12 @@
 // Home.js
 
 import React from 'react';
+import './Home.css'; // Import the CSS file
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <h1>Welcome to Zeraki</h1>
-      <p>Your content here...</p>
+    <div >
+      <h1>Welcome...</h1>
     </div>
   );
 };
