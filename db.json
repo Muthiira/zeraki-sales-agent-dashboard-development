@@ -1,7 +1,7 @@
 {
-	"schools": [
-		{
-      "id": 1,
+  "schools": [
+    {
+      "id": "1",
       "name": "Greenwood High",
       "type": "Secondary",
       "product": "Zeraki Analytics",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sunrise Academy",
       "type": "Primary",
       "product": "Zeraki Timetable",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Riverside School",
       "type": "IGCSE",
       "product": "Zeraki Analytics",
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Hilltop School",
       "type": "IGCSE",
       "product": "Zeraki Timetable",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Sunset Primary",
       "type": "Primary",
       "product": "Zeraki Analytics",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Starlight School",
       "type": "Secondary",
       "product": "Zeraki Finance",
@@ -244,88 +244,393 @@
         }
       ]
     },
-		{
-		  "id": 2,
-		  "name": "Sunrise Academy",
-		  "type": "Secondary",
-		  "product": "Zeraki Timetable",
-		  "county": "Mombasa",
-		  "registrationDate": "2019-03-15",
-		  "contact": "info@sunriseacademy.com",
-		  "balance": 3000,
-		  "invoices": [
-			{
-			  "id": 3,
-			  "invoiceNumber": "INV202103",
-			  "item": "Zeraki Timetable",
-			  "creationDate": "2023-04-01",
-			  "dueDate": "2023-05-01",
-			  "amount": 3000,
-			  "paidAmount": 0,
-			  "balance": 3000,
-			  "status": "Pending",
-			  "daysUntilDue": 5
-			}
-		  ],
-		  "collections": [
-			{
-			  "id": 3,
-			  "invoiceNumber": "INV202103",
-			  "collectionNumber": "COL202103",
-			  "dateOfCollection": "2023-04-15",
-			  "status": "Bounced",
-			  "amount": 0
-			}
-		  ]
-		}
-	  ],
-	"invoices": [
-	  { "id": 1, "schoolId": 1, "amount": 500, "dueDate": "2024-06-01", "status": "Pending" },
-	  { "id": 2, "schoolId": 2, "amount": 1500, "dueDate": "2024-06-10", "status": "Completed" }
-	],
-	"collections": [
-	  { "id": 1, "invoiceId": 1, "amount": 500, "date": "2024-05-01", "status": "Valid" }
-	],
-	"metrics": {
-		"collections": 120,
-		"signUps": 80,
-		"totalRevenue": {
-			"overall": 50000,
-			"analytics": 20000,
-			"finance": 15000,
-			"timetable": 15000
-		  },
-		"bouncedCheques": 5
-	  },
-	  "signupTargets": {
-		"analytics": { "target": 100, "achieved": 70 },
-		"finance": { "target": 100, "achieved": 50 },
-		"timetable": { "target": 100, "achieved": 60 }
-	  },
-	  "signupDistribution": {
-		"analytics": { "primary": 30, "secondary": 25, "igcse": 15 },
-		"finance": { "primary": 20, "secondary": 15, "igcse": 15 },
-		"timetable": { "primary": 25, "secondary": 20, "igcse": 15 }
-	  },
-	  "upcomingInvoices": [
-		{
-		  "id": 1,
-		  "schoolName": "Greenfield Primary School",
-		  "amountDue": 500,
-		  "dueDate": "2024-06-15"
-		},
-		{
-		  "id": 2,
-		  "schoolName": "Riverside Secondary School",
-		  "amountDue": 750,
-		  "dueDate": "2024-06-20"
-		},
-		{
-		  "id": 3,
-		  "schoolName": "Lakeside IGCSE Academy",
-		  "amountDue": 1000,
-		  "dueDate": "2024-06-25"
-		}
-	  ]
-
+    {
+      "id": "2",
+      "name": "Sunrise Academy",
+      "type": "Secondary",
+      "product": "Zeraki Timetable",
+      "county": "Mombasa",
+      "registrationDate": "2019-03-15",
+      "contact": "info@sunriseacademy.com",
+      "balance": 3000,
+      "invoices": [
+        {
+          "id": 3,
+          "invoiceNumber": "INV202103",
+          "item": "Zeraki Timetable",
+          "creationDate": "2023-04-01",
+          "dueDate": "2023-05-01",
+          "amount": 3000,
+          "paidAmount": 0,
+          "balance": 3000,
+          "status": "Pending",
+          "daysUntilDue": 5
+        }
+      ],
+      "collections": [
+        {
+          "id": 3,
+          "invoiceNumber": "INV202103",
+          "collectionNumber": "COL202103",
+          "dateOfCollection": "2023-04-15",
+          "status": "Bounced",
+          "amount": 0
+        }
+      ]
+    }
+  ],
+  "invoices": [
+    {
+      "id": "ca2f",
+      "item": "Zeraki Analytics",
+      "dueDate": "2009-06-06",
+      "amount": "5000",
+      "invoiceNumber": "INV1716960519564",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "5000",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "ee44",
+      "item": "Zeraki Analytics",
+      "dueDate": "2023-06-04",
+      "amount": "7000",
+      "invoiceNumber": "INV1716961860680",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "5000",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "171b",
+      "item": "Zeraki Finance",
+      "dueDate": "2003-06-05",
+      "amount": "6000",
+      "invoiceNumber": "INV1716963685396",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "6000",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "e01c",
+      "item": "Zeraki Finance",
+      "dueDate": "2020-06-04",
+      "amount": "5000",
+      "invoiceNumber": "INV1716964199486",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "7078",
+      "item": "Zeraki Analytics",
+      "dueDate": "2006-06-05",
+      "amount": "5000",
+      "invoiceNumber": "INV1716967561422",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "5000",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "19a6",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1716968456235",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    }
+  ],
+  "collections": [
+    {
+      "id": "48fe",
+      "invoiceNumber": "INV202102",
+      "amount": "6000",
+      "collectionNumber": "COL1716960482997",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "6599",
+      "invoiceNumber": "INV202102",
+      "amount": "6000",
+      "collectionNumber": "COL1716960484792",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "aace",
+      "invoiceNumber": "INV202102",
+      "amount": "6000",
+      "collectionNumber": "COL1716960487772",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "4818",
+      "invoiceNumber": "INV202102",
+      "amount": "6000",
+      "collectionNumber": "COL1716960633240",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "654f",
+      "invoiceNumber": "INV202105",
+      "amount": "4000",
+      "collectionNumber": "COL1716961273211",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "bec7",
+      "invoiceNumber": "INV202105",
+      "amount": "4000",
+      "collectionNumber": "COL1716961274239",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "036c",
+      "invoiceNumber": "INV202105",
+      "amount": "4000",
+      "collectionNumber": "COL1716961276324",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "a13d",
+      "invoiceNumber": "INV202105",
+      "amount": "4000",
+      "collectionNumber": "COL1716961279929",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "a307",
+      "invoiceNumber": "\tINV202103",
+      "amount": "5000",
+      "collectionNumber": "COL1716961909880",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "71b8",
+      "invoiceNumber": "\tINV202102",
+      "amount": "5000",
+      "collectionNumber": "COL1716961915006",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "09ac",
+      "invoiceNumber": "INV202108",
+      "amount": "5000",
+      "collectionNumber": "COL1716962580119",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "6"
+    },
+    {
+      "id": "1913",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963706527",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "11da",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963711348",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "789c",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963712163",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "0dc9",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963713267",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "e82d",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963713757",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "be95",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963714156",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "efa1",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963715705",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "4401",
+      "invoiceNumber": "INV202102",
+      "amount": "600",
+      "collectionNumber": "COL1716963716256",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "f373",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716968460250",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "e078",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716968460457",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "bede",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716968460619",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "8c02",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716968460757",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "f216",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716968460907",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    }
+  ],
+  "metrics": {
+    "collections": 120,
+    "signUps": 80,
+    "totalRevenue": {
+      "overall": 50000,
+      "analytics": 20000,
+      "finance": 15000,
+      "timetable": 15000
+    },
+    "bouncedCheques": 5
+  },
+  "signupTargets": {
+    "analytics": {
+      "target": 100,
+      "achieved": 70
+    },
+    "finance": {
+      "target": 100,
+      "achieved": 50
+    },
+    "timetable": {
+      "target": 100,
+      "achieved": 60
+    }
+  },
+  "signupDistribution": {
+    "analytics": {
+      "primary": 30,
+      "secondary": 25,
+      "igcse": 15
+    },
+    "finance": {
+      "primary": 20,
+      "secondary": 15,
+      "igcse": 15
+    },
+    "timetable": {
+      "primary": 25,
+      "secondary": 20,
+      "igcse": 15
+    }
+  },
+  "upcomingInvoices": [
+    {
+      "id": "1",
+      "schoolName": "Greenfield Primary School",
+      "amountDue": 500,
+      "dueDate": "2024-06-15"
+    },
+    {
+      "id": "2",
+      "schoolName": "Riverside Secondary School",
+      "amountDue": 750,
+      "dueDate": "2024-06-20"
+    },
+    {
+      "id": "3",
+      "schoolName": "Lakeside IGCSE Academy",
+      "amountDue": 1000,
+      "dueDate": "2024-06-25"
+    }
+  ]
 }

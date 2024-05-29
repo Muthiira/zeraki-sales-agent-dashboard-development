@@ -1,14 +1,16 @@
-/* Sidebar.css */
-
 .sidebar {
 	width: 200px;
 	height: 100vh;
-	background-color: #f0f0f0;
+	background-color: #34495e; /* Blue color */
 	position: fixed;
 	left: 0;
 	top: 0;
 	transition: transform 0.3s ease;
 	z-index: 100;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
   }
   
   .sidebar.open {
@@ -31,20 +33,120 @@
   .sidebar ul li a {
 	display: block;
 	padding: 10px;
-	color: #333;
+	color: #fff; /* White color for text */
 	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	text-align: center;
   }
   
   .sidebar ul li a:hover {
-	background-color: #ddd;
+	background-color: #34495e; /* Darker blue for hover */
+  }
+  
+  .sidebar ul li a i {
+	margin-right: 10px; /* Space between icon and text */
   }
   
   .content {
-	margin-left: 200px; /* Width of the sidebar */
+	margin-left: 200px;
 	padding: 20px;
   }
   
   .home-container {
 	padding: 20px;
   }
+  
+  .bottom-links {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+  }
+  
+  .bottom-links a {
+	display: block;
+	padding: 10px;
+	color: #fff; /* White color for text */
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .bottom-links a:hover {
+	background-color: #34495e; /* Darker blue for hover */
+  }
+
+  .sales-section {
+	background-color: #34495e;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+  }
+  
+  .school-container {
+	margin-top: 20px;
+  }
+  
+  .school-container .MuiTypography-h4 {
+	font-size: 1.875rem; /* Adjust font size */
+  }
+  
+  .school-container .MuiTableCell-head {
+	color: #333; /* Adjust table header text color */
+  }
+  
+  .school-container .MuiTableCell-body {
+	font-size: 0.875rem; /* Adjust table body font size */
+  }
+  
+  .school-container .MuiButton-root {
+	background-color:#4f6882; /* Adjust button background color */
+	color: #fff; /* Adjust button text color */
+  }
+  
+  .school-container .MuiButton-root:hover {
+	background-color: #4f6882; /* Adjust button hover background color */
+  }
+
+  .school-details-header {
+	background-color: #34495e;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+  }
+  
+  .school-details-header .MuiTypography-h4 {
+	font-size: 1.875rem; /* Adjust font size */
+  }
+  
+  .school-details-container {
+	padding: 20px;
+  }
+  
+  .school-details-container .MuiTypography-subtitle1 {
+	margin-bottom: 10px; /* Adjust margin between subtitle items */
+  }
+  
+  .school-details-container .MuiTableContainer-root {
+	margin-top: 20px; /* Adjust margin between tables */
+  }
+  
+  .school-details-container .MuiTypography-h6 {
+	padding: 10px; /* Adjust padding for table headings */
+  }
+  
+  .school-details-container .MuiButton-root {
+	background-color: #4f6882; /* Adjust button background color */
+	color: #fff; /* Adjust button text color */
+  }
+  
+  .school-details-container .MuiButton-root:hover {
+	background-color: #4f6882; /* Adjust button hover background color */
+  }
+  
+  
   

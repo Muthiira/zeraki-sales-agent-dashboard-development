@@ -11,7 +11,6 @@ const UpcomingInvoices = () => {
   }, []);
 
   const handleCollectPayment = (invoiceId) => {
-    // Implement payment collection logic
   };
 
   return (

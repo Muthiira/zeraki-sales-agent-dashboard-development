@@ -13,38 +13,47 @@ const Schools = () => {
   }, []);
 
   return (
-    <TableContainer component={Paper}>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell>Type</TableCell>
-            <TableCell>Product</TableCell>
-            <TableCell>County</TableCell>
-            <TableCell>Registration Date</TableCell>
-            <TableCell>Contact</TableCell>
-            <TableCell>Balance</TableCell>
-            <TableCell>Actions</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {schools.map(school => (
-            <TableRow key={school.id}>
-              <TableCell>{school.name}</TableCell>
-              <TableCell>{school.type}</TableCell>
-              <TableCell>{school.product}</TableCell>
-              <TableCell>{school.county}</TableCell>
-              <TableCell>{school.registrationDate}</TableCell>
-              <TableCell>{school.contact}</TableCell>
-              <TableCell>{school.balance}</TableCell>
-              <TableCell>
-                <Button component={Link} to={`/schools/${school.id}`}>View Details</Button>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <div>
+      <div className="sales-section">
+        <Typography variant="h4" gutterBottom style={{ margin: '20px 0', color: '#fff' }}>
+          School Data
+        </Typography>
+      </div>
+      <div className="school-container">
+        <TableContainer component={Paper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Name</TableCell>
+                <TableCell>Type</TableCell>
+                <TableCell>Product</TableCell>
+                <TableCell>County</TableCell>
+                <TableCell>Registration Date</TableCell>
+                <TableCell>Contact</TableCell>
+                <TableCell>Balance</TableCell>
+                <TableCell>Actions</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {schools.map(school => (
+                <TableRow key={school.id}>
+                  <TableCell>{school.name}</TableCell>
+                  <TableCell>{school.type}</TableCell>
+                  <TableCell>{school.product}</TableCell>
+                  <TableCell>{school.county}</TableCell>
+                  <TableCell>{school.registrationDate}</TableCell>
+                  <TableCell>{school.contact}</TableCell>
+                  <TableCell>{school.balance}</TableCell>
+                  <TableCell>
+                    <Button component={Link} to={`/schools/${school.id}`}>View Details</Button>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
+    </div>
   );
 };
 

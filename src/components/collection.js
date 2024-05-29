@@ -11,7 +11,6 @@ const Collections = ({ schoolId }) => {
   }, [schoolId]);
 
   const handleMarkCollection = (collectionId, status) => {
-    // Implement collection status update logic
   };
 
   return (

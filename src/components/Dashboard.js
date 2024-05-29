@@ -167,7 +167,6 @@ const PaymentModal = ({ invoice, onClose }) => {
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
 
   const handleSubmit = () => {
-    // Implement payment collection logic here
     console.log(`Collected payment for invoice: ${invoice.id}`);
     console.log(`Amount: ${amount}, Status: ${status}, Date: ${date}`);
     onClose();

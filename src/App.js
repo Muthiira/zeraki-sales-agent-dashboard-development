@@ -6,7 +6,7 @@ import Dashboard from './components/Dashboard';
 import Schools from './components/Schools';
 import Sidebar from './components/Sidebar';
 import SchoolDetails from './components/SchoolDetails';
-import Home from './components/Home'; // Import the Home component
+import Home from './components/Home';
 
 function App() {
   return (
