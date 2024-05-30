@@ -6,7 +6,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import SchoolIcon from '@mui/icons-material/School';
 import LockIcon from '@mui/icons-material/Lock';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+
 
 const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,7 +21,7 @@ const Sidebar = () => {
   };
 
   const handleBackHome = () => {
-    navigate('/');
+    // navigate('/');
   };
 
   return (
