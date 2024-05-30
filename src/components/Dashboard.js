@@ -5,7 +5,6 @@ import { Card, CardContent, Typography, Grid, Button, Modal, TextField, Box } fr
 import { styled } from '@mui/system';
 import 'chart.js/auto';
 
-
 const useStyles = styled((theme) => ({
   card: {
     backgroundColor: '#f5f5f5',
@@ -223,7 +222,7 @@ const PaymentModal = ({ invoice, onClose, classes }) => {
 
   return (
     <Modal open={true} onClose={onClose}>
-      <Box className={classes.modalBox}>
+      <Box className={classes.modalBox} style={{ backgroundColor: 'white' }}>
         <Typography variant="h6">Collect Payment for {invoice.schoolName}</Typography>
         <TextField
           fullWidth
