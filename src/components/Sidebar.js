@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import HomeIcon from '@mui/icons-material/Home';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -10,7 +10,7 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();
+
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -20,9 +20,7 @@ const Sidebar = () => {
     setIsHovered(false);
   };
 
-  const handleBackHome = () => {
-    // navigate('/');
-  };
+ 
 
   return (
     <div
