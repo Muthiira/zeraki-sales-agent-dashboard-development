@@ -9,7 +9,10 @@
 		"src": "frontend/package.json",
 		"use": "@vercel/static-build",
 		"config": { "distDir": "frontend/build" }
-	  }
+	  },
+	  { "src": "frontend/public", "use": "@vercel/static" },
+	  { "src": "frontend/build/", "use": "@vercel/static" }
+
 	],
 	"routes": [
 	  { "src": "/api/(.*)", "dest": "api/backend/json-server.js" },
