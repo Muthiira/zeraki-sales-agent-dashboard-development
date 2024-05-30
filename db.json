@@ -459,6 +459,30 @@
       "balance": "",
       "creationDate": "2024-05-30",
       "schoolId": "1"
+    },
+    {
+      "id": "4cec",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717065120972",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
+    },
+    {
+      "id": "eaeb",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717065121909",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
     }
   ],
   "collections": [

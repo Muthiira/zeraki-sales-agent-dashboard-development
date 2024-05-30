@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableHead, TableRow, Paper, TableContainer, Button, Typography } from '@material-ui/core';
+import { Table, TableBody, TableCell, TableHead, TableRow, Paper, TableContainer, Button, Typography } from '@mui/material';
 
 const Schools = () => {
   const [schools, setSchools] = useState([]);

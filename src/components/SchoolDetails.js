@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import { Table, TableBody, TableCell, TableHead, TableRow, Paper, TableContainer, Button, Typography, TextField, Select, MenuItem } from '@material-ui/core';
+import { Table, TableBody, TableCell, TableHead, TableRow, Paper, TableContainer, Button, Typography, TextField, Select, MenuItem } from '@mui/material';
 
 const SchoolDetails = () => {
   const { id } = useParams();

@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import axios from 'axios';
 import { Pie, Bar } from 'react-chartjs-2';
-import { Card, CardContent, Typography, Grid, Button, Modal, TextField, Box } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Card, CardContent, Typography, Grid, Button, Modal, TextField, Box } from '@mui/material';
+import { styled } from '@mui/system';
 import 'chart.js/auto';
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = styled((theme) => ({
   card: {
     backgroundColor: '#f5f5f5',
     padding: theme.spacing(3),
