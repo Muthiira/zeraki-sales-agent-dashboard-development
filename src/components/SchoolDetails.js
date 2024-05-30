@@ -139,54 +139,57 @@ const SchoolDetails = () => {
   }
 
   return (
-    <div>
-      <div className="school-details-header">
-        <Typography variant="h4">{school.name}</Typography>
-      </div>
-	  <div className="school-details-container">
-      <Typography variant="subtitle1">Type: {school.type}</Typography>
-      <Typography variant="subtitle1">Product: {school.product}</Typography>
-      <Typography variant="subtitle1">County: {school.county}</Typography>
-      <Typography variant="subtitle1">Registration Date: {school.registrationDate}</Typography>
-      <Typography variant="subtitle1">Contact: {school.contact}</Typography>
-      <Typography variant="subtitle1">Balance: {school.balance}</Typography>
-	  
+	<div>
+	<div className="school-details-header">
+	  <Typography variant="h4">{school.name}</Typography>
+	</div>
+	<div className="school-details-container">
+	  <Typography variant="subtitle1"><b>Type:</b> {school.type}</Typography>
+	  <Typography variant="subtitle1"><b>Product:</b> {school.product}</Typography>
+	  <Typography variant="subtitle1"><b>County:</b> {school.county}</Typography>
+	  <Typography variant="subtitle1"><b>Registration Date:</b> {school.registrationDate}</Typography>
+	  <Typography variant="subtitle1"><b>Contact:</b> {school.contact}</Typography>
+	  <Typography variant="subtitle1"><b>Balance:</b> {school.balance}</Typography>
 
-      <TableContainer component={Paper} style={{ marginTop: '20px' }}>
-        <Typography variant="h6" style={{ padding: '10px' }}>Invoices</Typography>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Invoice Number</TableCell>
-              <TableCell>Item</TableCell>
-              <TableCell>Creation Date</TableCell>
-              <TableCell>Due Date</TableCell>
-              <TableCell>Amount</TableCell>
-              <TableCell>Paid Amount</TableCell>
-              <TableCell>Balance</TableCell>
-              <TableCell>Status</TableCell>
-              <TableCell>Days Until Due</TableCell>
-              <TableCell>Actions</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {school.invoices.map(invoice => (
-              <TableRow key={invoice.id}>
-                <TableCell>{invoice.invoiceNumber}</TableCell>
-                <TableCell>{invoice.item}</TableCell>
-                <TableCell>{invoice.creationDate}</TableCell>
-                <TableCell>{invoice.dueDate}</TableCell>
-                <TableCell>{invoice.amount}</TableCell>
-                <TableCell>{invoice.paidAmount}</TableCell>
-                <TableCell>{invoice.balance}</TableCell>
-                <TableCell>{invoice.status}</TableCell>
-                <TableCell>{Math.ceil((new Date(invoice.dueDate) - new Date()) / (1000 * 60 * 60 * 24))}</TableCell>
-                <TableCell>
-                  <Button onClick={() => handleDeleteInvoice(invoice.id)}>Delete</Button>
-                  <Button onClick={() => setEditInvoice(invoice)}>Edit</Button>
-                </TableCell>
-              </TableRow>
-            ))}
+	  <TableContainer component={Paper} style={{ marginTop: '20px' }}>
+	  	<div className="school-details-sub-header">
+		<Typography variant="h6" style={{ padding: '10px' }}>Invoices</Typography>
+		</div>
+		<Table>
+		  <TableHead>
+			<TableRow>
+			  <TableCell><b>Invoice Number</b></TableCell>
+			  <TableCell><b>Item</b></TableCell>
+			  <TableCell><b>Creation Date</b></TableCell>
+			  <TableCell><b>Due Date</b></TableCell>
+			  <TableCell><b>Amount</b></TableCell>
+			  <TableCell><b>Paid Amount</b></TableCell>
+			  <TableCell><b>Balance</b></TableCell>
+			  <TableCell><b>Status</b></TableCell>
+			  <TableCell><b>Days Until Due</b></TableCell>
+			  <TableCell><b>Actions</b></TableCell>
+			</TableRow>
+		  </TableHead>
+		  <TableBody>
+			{school.invoices.map(invoice => (
+			  <TableRow key={invoice.id}>
+				<TableCell>{invoice.invoiceNumber}</TableCell>
+				<TableCell>{invoice.item}</TableCell>
+				<TableCell>{invoice.creationDate}</TableCell>
+				<TableCell>{invoice.dueDate}</TableCell>
+				<TableCell>{invoice.amount}</TableCell>
+				<TableCell>{invoice.paidAmount}</TableCell>
+				<TableCell>{invoice.balance}</TableCell>
+				<TableCell>{invoice.status}</TableCell>
+				<TableCell>{Math.ceil((new Date(invoice.dueDate) - new Date()) / (1000 * 60 * 60 * 24))}</TableCell>
+				<TableCell >
+				<div style={{ display: 'flex', gap: '5px' }}>
+				  <Button onClick={() => handleDeleteInvoice(invoice.id)}>Delete</Button>
+				  <Button onClick={() => setEditInvoice(invoice)}>Edit</Button>
+				  </div>
+				</TableCell>
+			  </TableRow>
+			))}
             {editInvoice && (
               <TableRow>
                 <TableCell>{editInvoice.invoiceNumber}</TableCell>
@@ -243,51 +246,60 @@ const SchoolDetails = () => {
       </TableContainer>
 
       <TableContainer component={Paper} style={{ marginTop: '20px' }}>
+	  <div className="school-details-sub-header">
         <Typography variant="h6" style={{ padding: '10px' }}>Collections</Typography>
+		</div>
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Collection Number</TableCell>
-              <TableCell>Invoice Number</TableCell>
-              <TableCell>Date of Collection</TableCell>
-              <TableCell>Amount</TableCell>
-              <TableCell>Status</TableCell>
-              <TableCell>Actions</TableCell>
+              <TableCell><b>Collection Number</b></TableCell>
+              <TableCell><b>Invoice Number</b></TableCell>
+              <TableCell><b>Date of Collection</b></TableCell>
+              <TableCell><b>Amount</b></TableCell>
+              <TableCell><b>Status</b></TableCell>
+              <TableCell><b>Actions</b></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {school.collections.map(collection => (
-              <TableRow key={collection.id}>
-                <TableCell>{collection.collectionNumber}</TableCell>
-                <TableCell>{collection.invoiceNumber}</TableCell>
-                <TableCell>{collection.dateOfCollection}</TableCell>
-                <TableCell>{collection.amount}</TableCell>
-                <TableCell>
-                  <Select value={collection.status} onChange={e => handleUpdateCollectionStatus(collection.id, e.target.value)}>
-                    <MenuItem value="Valid">Valid</MenuItem>
-                    <MenuItem value="Bounced">Bounced</MenuItem>
-                  </Select>
-                </TableCell>
-                <TableCell>
-                  <Button onClick={() => handleDeleteCollection(collection.id)}>Delete</Button>
-                </TableCell>
-              </TableRow>
-            ))}
-            <TableRow>
-              <TableCell>New</TableCell>
-              <TableCell>
-                <TextField value={newCollection.invoiceNumber} onChange={e => setNewCollection({ ...newCollection, invoiceNumber: e.target.value })} />
-              </TableCell>
-              <TableCell>{new Date().toISOString().split('T')[0]}</TableCell>
-              <TableCell>
-                <TextField type="number" value={newCollection.amount} onChange={e => setNewCollection({ ...newCollection, amount: e.target.value })} />
-              </TableCell>
-              <TableCell>Valid</TableCell>
-              <TableCell>
-                <Button onClick={() => handleAddCollection()}>Add</Button>
-              </TableCell>
-            </TableRow>
-          </TableBody>
+      {school.collections.map(collection => (
+        <TableRow key={collection.id}>
+          <TableCell>{collection.collectionNumber}</TableCell>
+          <TableCell>{collection.invoiceNumber}</TableCell>
+          <TableCell>{collection.dateOfCollection}</TableCell>
+          <TableCell>{collection.amount}</TableCell>
+          <TableCell>
+            <Select value={collection.status} onChange={e => handleUpdateCollectionStatus(collection.id, e.target.value)}>
+              <MenuItem value="Valid">Valid</MenuItem>
+              <MenuItem value="Bounced">Bounced</MenuItem>
+            </Select>
+          </TableCell>
+          <TableCell>
+            <Button onClick={() => handleDeleteCollection(collection.id)}>Delete</Button>
+          </TableCell>
+        </TableRow>
+      ))}
+      <TableRow>
+        <TableCell>New</TableCell>
+        <TableCell>
+          <TextField 
+            value={newCollection.invoiceNumber} 
+            onChange={e => setNewCollection({ ...newCollection, invoiceNumber: e.target.value })} 
+          />
+        </TableCell>
+        <TableCell>{new Date().toISOString().split('T')[0]}</TableCell>
+        <TableCell>
+          <TextField 
+            type="number" 
+            value={newCollection.amount} 
+            onChange={e => setNewCollection({ ...newCollection, amount: e.target.value })} 
+          />
+        </TableCell>
+        <TableCell>Valid</TableCell>
+        <TableCell>
+          <Button onClick={handleAddCollection}>Add</Button>
+        </TableCell>
+      </TableRow>
+    </TableBody>
         </Table>
       </TableContainer>
 	  </div>

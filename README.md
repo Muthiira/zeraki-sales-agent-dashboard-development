@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+Zeraki Dashboard
+Overview
+The Zeraki Dashboard is a comprehensive web application that provides detailed metrics and analytics for managing schools. It features real-time data visualization through charts, a modular card-based layout for key metrics, and detailed school-specific data management capabilities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Dashboard Metrics: Overview of collections, sign-ups, total revenue, and bounced cheques.
+Charts: Visualize target achievements and sign-up distributions using Pie and Bar charts.
+Invoices Management: View, add, edit, and delete invoices for schools.
+Collections Management: Manage collections linked to invoices, including adding new collections and updating their status.
+School Details: Detailed view of individual school data, including invoices and collections.
+Technologies Used
+React: Frontend library for building user interfaces.
+Material-UI: UI framework for React components and styling.
+Axios: Promise-based HTTP client for making API requests.
+Chart.js: Library for creating interactive charts.
+React Router: Library for routing in React applications.
 
-## Available Scripts
+Getting Started
 
-In the project directory, you can run:
+Prerequisites
+Node.js and npm installed on your local machine.
+Backend server running at http://localhost:3001
+Installation
+Clone the Repository
 
-### `npm start`
+git clone https://github.com/yourusername/zeraki-dashboard.git
+cd zeraki-dashboard
+Install Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
+Start the Application
 
-### `npm test`
+npm start
+The application will run on http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+endpoints
 
-### `npm run build`
+home: http://localhost:3000/
+dashboard: http://localhost:3000/dashboard
+school data: http://localhost:3000/schools
+school details: http://localhost:3000/schools/:id
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Detailed School Information
+Access detailed information about individual schools, including a list of invoices and collections. Use the navigation links to explore specific school details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+General Design
+Consistency
+Color Scheme: A consistent color palette (dark blue-gray, white, light gray) creates a professional and cohesive look.
+Typography: Uniform font styles and sizes ensure readability and a clean aesthetic.
+Spacing: Consistent padding and margins maintain a balanced and uncluttered layout.
+Usability
+Hover Effects: Visual feedback on interactive elements improves user experience.
+Fixed Elements: Fixed sidebar and bottom links provide constant navigation access, enhancing usability.
+Visual Hierarchy
+Font Sizes and Weights: Differentiated font sizes and weights create a clear visual hierarchy, guiding the user's focus to key information.
+Responsiveness
+Flexbox Layouts: Use of flexbox ensures that the layout adapts well to different screen sizes and devices, providing a responsive user experience.

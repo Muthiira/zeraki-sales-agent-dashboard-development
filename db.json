@@ -351,6 +351,78 @@
       "balance": "",
       "creationDate": "2024-05-29",
       "schoolId": "1"
+    },
+    {
+      "id": "333a",
+      "item": "Zeraki Analytics",
+      "dueDate": "2023-06-04",
+      "amount": "5000",
+      "invoiceNumber": "INV1716974183367",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "5000",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "4fc7",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1716975892340",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "3478",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1716975895442",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "a259",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1716975896990",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-29",
+      "schoolId": "1"
+    },
+    {
+      "id": "8776",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717045919134",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
+    },
+    {
+      "id": "64ca",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717049483106",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
     }
   ],
   "collections": [
@@ -567,6 +639,168 @@
       "amount": "",
       "collectionNumber": "COL1716968460907",
       "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "8a4b",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716974466686",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "d64b",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716974467253",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "3f81",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716974687100",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "eb47",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716975898923",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "64da",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1716975899142",
+      "dateOfCollection": "2024-05-29",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "00bf",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717042688158",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "1faf",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045917255",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "2eb4",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045917994",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "5472",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045922449",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "b581",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045922749",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "2bcd",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045922965",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "cd5e",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045923136",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "c40d",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045923284",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "9e68",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045923461",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "360e",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045923598",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "e79c",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045923783",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "3ba7",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045925607",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "baa2",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717045925886",
+      "dateOfCollection": "2024-05-30",
       "status": "Valid",
       "schoolId": "1"
     }

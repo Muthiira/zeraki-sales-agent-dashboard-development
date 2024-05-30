@@ -23,16 +23,16 @@ const Schools = () => {
         <TableContainer component={Paper}>
           <Table>
             <TableHead>
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Type</TableCell>
-                <TableCell>Product</TableCell>
-                <TableCell>County</TableCell>
-                <TableCell>Registration Date</TableCell>
-                <TableCell>Contact</TableCell>
-                <TableCell>Balance</TableCell>
-                <TableCell>Actions</TableCell>
-              </TableRow>
+            <TableRow>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Name</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Type</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Product</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>County</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Registration Date</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Contact</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Balance</Typography></b></TableCell>
+              <TableCell><b><Typography variant="subtitle1" style={{ fontWeight: 'bold' }}>Actions</Typography></b></TableCell>
+            </TableRow>
             </TableHead>
             <TableBody>
               {schools.map(school => (

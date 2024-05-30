@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Sidebar.css';
+import HomeIcon from '@material-ui/icons/Home';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import SchoolIcon from '@material-ui/icons/School';
+import LockIcon from '@material-ui/icons/Lock';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+
 
 const Sidebar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -27,21 +33,30 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <HomeIcon /> Home
+            </Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/dashboard">
+              <DashboardIcon /> Dashboard
+            </Link>
           </li>
           <li>
-            <Link to="/schools">Schools</Link>
+            <Link to="/schools">
+              <SchoolIcon /> Schools
+            </Link>
           </li>
         </ul>
       </nav>
-      {/* Login and Signup links */}
       <div className="bottom-links">
-        <Link to="/login" className="sidebar-link">Login</Link>
-        <Link to="/signup" className="sidebar-link">Signup</Link>
-      </div>
+		<Link to="/login" className="sidebar-link">
+			<LockIcon /> Login
+		</Link>
+		<Link to="/signup" className="sidebar-link">
+			<PersonAddIcon /> Signup
+		</Link>
+	  </div>
     </div>
   );
 };

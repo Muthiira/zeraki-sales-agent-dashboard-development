@@ -1,7 +1,7 @@
 .sidebar {
 	width: 200px;
 	height: 100vh;
-	background-color: #34495e; /* Blue color */
+	background-color: #34495e;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -31,9 +31,10 @@
   }
   
   .sidebar ul li a {
-	display: block;
+	display: flex;
+	align-items: center; /* Align items vertically */
 	padding: 10px;
-	color: #fff; /* White color for text */
+	color: #fff;
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: bold;
@@ -42,11 +43,11 @@
   }
   
   .sidebar ul li a:hover {
-	background-color: #34495e; /* Darker blue for hover */
+	background-color: #34495e;
   }
   
-  .sidebar ul li a i {
-	margin-right: 10px; /* Space between icon and text */
+  .sidebar ul li a svg {
+	margin-right: 10px; 
   }
   
   .content {
@@ -69,7 +70,7 @@
   .bottom-links a {
 	display: block;
 	padding: 10px;
-	color: #fff; /* White color for text */
+	color: #fff;
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: bold;
@@ -77,9 +78,9 @@
   }
   
   .bottom-links a:hover {
-	background-color: #34495e; /* Darker blue for hover */
+	background-color: #34495e;
   }
-
+  
   .sales-section {
 	background-color: #34495e;
 	color: #fff;
@@ -92,26 +93,26 @@
   }
   
   .school-container .MuiTypography-h4 {
-	font-size: 1.875rem; /* Adjust font size */
+	font-size: 1.875rem;
   }
   
   .school-container .MuiTableCell-head {
-	color: #333; /* Adjust table header text color */
+	color: #333;
   }
   
   .school-container .MuiTableCell-body {
-	font-size: 0.875rem; /* Adjust table body font size */
+	font-size: 0.875rem;
   }
   
   .school-container .MuiButton-root {
-	background-color:#4f6882; /* Adjust button background color */
-	color: #fff; /* Adjust button text color */
+	background-color: #4f6882;
+	color: #fff;
   }
   
   .school-container .MuiButton-root:hover {
-	background-color: #4f6882; /* Adjust button hover background color */
+	background-color: #4f6882;
   }
-
+  
   .school-details-header {
 	background-color: #34495e;
 	color: #fff;
@@ -120,7 +121,7 @@
   }
   
   .school-details-header .MuiTypography-h4 {
-	font-size: 1.875rem; /* Adjust font size */
+	font-size: 1.875rem;
   }
   
   .school-details-container {
@@ -128,25 +129,39 @@
   }
   
   .school-details-container .MuiTypography-subtitle1 {
-	margin-bottom: 10px; /* Adjust margin between subtitle items */
+	margin-bottom: 10px;
   }
   
   .school-details-container .MuiTableContainer-root {
-	margin-top: 20px; /* Adjust margin between tables */
+	margin-top: 20px;
   }
   
   .school-details-container .MuiTypography-h6 {
-	padding: 10px; /* Adjust padding for table headings */
+	padding: 10px;
   }
   
   .school-details-container .MuiButton-root {
-	background-color: #4f6882; /* Adjust button background color */
-	color: #fff; /* Adjust button text color */
+	background-color: #4f6882;
+	color: #fff;
   }
   
   .school-details-container .MuiButton-root:hover {
-	background-color: #4f6882; /* Adjust button hover background color */
+	background-color: #4f6882;
   }
   
+  .school-details-sub-header {
+	background-color: #4f6882;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+  }
   
+  .sidebar-link {
+	display: flex;
+	align-items: center;
+  }
+  
+  .sidebar-link svg {
+	margin-right: 10px;
+  }
   
