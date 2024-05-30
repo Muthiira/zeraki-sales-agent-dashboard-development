@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "build": "cd frontend && npm install && npm run build"
+        "build": "cd frontend && npm install && npm run build",
+        "start": "node api/backend/json-server.js"
     },
     "dependencies": {
         "json-server": "^0.16.3"
