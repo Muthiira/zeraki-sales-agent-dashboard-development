@@ -435,6 +435,30 @@
       "balance": "",
       "creationDate": "2024-05-30",
       "schoolId": "1"
+    },
+    {
+      "id": "348d",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717063689962",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
+    },
+    {
+      "id": "84e4",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717063691078",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
     }
   ],
   "collections": [
@@ -812,6 +836,15 @@
       "invoiceNumber": "",
       "amount": "",
       "collectionNumber": "COL1717045925886",
+      "dateOfCollection": "2024-05-30",
+      "status": "Valid",
+      "schoolId": "1"
+    },
+    {
+      "id": "0817",
+      "invoiceNumber": "",
+      "amount": "",
+      "collectionNumber": "COL1717063689099",
       "dateOfCollection": "2024-05-30",
       "status": "Valid",
       "schoolId": "1"
