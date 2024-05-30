@@ -423,6 +423,18 @@
       "balance": "",
       "creationDate": "2024-05-30",
       "schoolId": "1"
+    },
+    {
+      "id": "4df9",
+      "item": "",
+      "dueDate": "",
+      "amount": "",
+      "invoiceNumber": "INV1717050363896",
+      "status": "Pending",
+      "paidAmount": 0,
+      "balance": "",
+      "creationDate": "2024-05-30",
+      "schoolId": "1"
     }
   ],
   "collections": [
